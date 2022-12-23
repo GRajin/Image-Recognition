@@ -1,0 +1,8 @@
+from PIL import Image
+import matplotlib.pyplot as plt
+import numpy as np
+%matplotlib inline
+image=Image.open("/content/lungs.png")
+image.show()
+bw_image=image.convert('L')
+plt.imshow(bw_image, cmap='gray')
